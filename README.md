@@ -59,6 +59,6 @@
 * add Lookup component, map *klient – Klient*, select column *ID* and create *IdKlient* column based on it.  
 * repeat Lookups for *Regiony* and *Towary*. For *Towary* map using 3 columns – *sprzet-towar*, *grupa-grupa*, *podgrupa-podgrupa*  
 * add Aggregate component, select foreign keys (*IdKlient, IdRegion, IdTowar, data*), facts (*ilosc, cena_hurt, obrot*) and *hist_plan* column. Group by foreign keys and *hist_plan*. Aggregate facts: *ilosc*, *obrot* – SUM, *cena_hurt* – AVG
-* split the data to 2 fact tables using Conditional Split component. Rows with value 'hist' goes to *"Sprzedaz_hist"* table, and those with 'plan' flows to "Sprzedaz_plan"* table  
+* split the data to 2 fact tables using Conditional Split component. Rows with value 'hist' goes to *"Sprzedaz_hist"* table, and those with 'plan' flows to *"Sprzedaz_plan"* table  
 
 ![working sprzedaz data flow](img/DFT-Sprzedaz.png "working sprzedaz data flow")  
